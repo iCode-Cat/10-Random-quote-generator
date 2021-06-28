@@ -1,0 +1,44 @@
+.quotes {
+    max-width: 375px;
+    margin: 0 auto;
+    &-text {
+        border-left: 8px solid var(--clr-yellow);
+        padding-left: 5rem;
+        color: var(--clr-black);
+        font-size: 1.8rem;
+        line-height: 25px;
+    }
+    &-details {
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3rem 5rem;
+        margin-top: 5rem;
+        transition: .3s;
+        &-author {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color:var(--clr-darkGray)
+        }
+        &-genre {
+            margin-top: .4rem;
+            font-size: 1.1em;
+            color:var(--clr-lightGray)
+        }
+        &-button {
+            opacity:0;
+            color:var(--clr-white)
+        }
+    }
+    // Hovers
+    &-details:hover {
+        background: var(--clr-gray);
+        .quotes-details-author {
+            color:var(--clr-white)
+        }
+        .quotes-details-button {
+            opacity: 100;
+        }
+    }
+}

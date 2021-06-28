@@ -1,0 +1,12 @@
+.header {
+    display: flex;
+    justify-content:flex-end;
+    &-button {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap:5px;
+        align-items: center;
+        color: var(--clr-gray);
+        font-size: 1.8rem;
+    }
+}
