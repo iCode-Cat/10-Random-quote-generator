@@ -1,0 +1,112 @@
+.quotes {
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.quotes-text {
+  border-left: 8px solid var(--clr-yellow);
+  padding-left: 5rem;
+  color: var(--clr-black);
+  font-size: 1.8rem;
+  line-height: 25px;
+  max-width: 375px;
+  margin-right: 2rem;
+}
+
+.quotes-details {
+  margin-left: 3rem;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3rem 5rem;
+  margin-top: 5rem;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.quotes-details-author {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--clr-darkGray);
+}
+
+.quotes-details-genre {
+  margin-top: .4rem;
+  font-size: 1.1em;
+  color: var(--clr-lightGray);
+}
+
+.quotes-details-button {
+  opacity: 0;
+  color: var(--clr-white);
+}
+
+.quotes-details:hover {
+  background: var(--clr-gray);
+}
+
+.quotes-details:hover .quotes-details-author {
+  color: var(--clr-white);
+}
+
+.quotes-details:hover .quotes-details-button {
+  opacity: 100;
+}
+
+@media (min-width: 50em) {
+  .quotes {
+    max-width: 620px;
+  }
+  .quotes-text {
+    font-size: 3.6rem;
+    max-width: unset;
+    line-height: unset;
+    line-height: 46px;
+  }
+  .quotes-details {
+    margin-top: 7rem;
+    margin-left: 4rem;
+  }
+  .quotes-details-author {
+    font-size: 2.4rem;
+    color: var(--clr-darkGray);
+  }
+  .quotes-details-genre {
+    font-size: 1.4rem;
+    color: var(--clr-lightGray);
+  }
+}
+
+.author {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10rem;
+}
+
+.author-name {
+  font-weight: 700;
+  margin: -5rem 0;
+  text-transform: capitalize;
+  font-size: 2.4rem;
+  color: var(--clr-gray);
+}
+
+@media (min-width: 50em) {
+  .author-name {
+    font-size: 3.6rem;
+  }
+}
+/*# sourceMappingURL=home.style.css.map */

@@ -32,9 +32,14 @@ button {
   cursor: pointer;
 }
 
+header {
+  margin-bottom: 10rem;
+}
+
 footer {
   text-align: center;
   font-size: 1.4rem;
   color: #828282;
+  margin-top: 10rem;
 }
 

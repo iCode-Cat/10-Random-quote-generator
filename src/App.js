@@ -1,11 +1,13 @@
 import './global/root.scss';
 import Header from './components/Header';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
+import QuostesProvider from './context/QuotesProvider';
 import Home from './pages/Home';
 import Author from './pages/Author';
 
 function App() {
   return (
+    <QuostesProvider>
     <BrowserRouter>
       <>
         <Header />
@@ -20,6 +22,7 @@ function App() {
         </footer>
       </>
     </BrowserRouter>
+    </QuostesProvider>
   );
 }
 

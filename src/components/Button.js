@@ -1,20 +1,26 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { QuotesContext } from '../context/QuotesProvider';
+import { useHistory } from 'react-router-dom';
 
 const Button = () => {
+
+    const [ quotes ] = useContext(QuotesContext)
+    const { quoteAuthor, quoteGenre } = quotes
+    const history = useHistory();
     return (
         <>
-            <section className="quotes-details">
+            <section onClick={()=> history.push('/'+quoteAuthor.replace(/[' ']/g, '-').toLowerCase())} className="quotes-details">
                 <div className="quostes-details-container">
                     <p className="quotes-details-author">
-                        Bill Gates
+                        { quoteAuthor }
                     </p>
                     <p className="quotes-details-genre">
-                        love
+                        { quoteGenre }
                     </p>
                 </div>
-                <button className="quotes-details-button">
-                    BUTTON
-                </button>
+                <span className="material-icons quotes-details-button">
+                trending_flat
+                </span>
             </section>
         </>
     )
