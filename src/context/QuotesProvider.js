@@ -1,5 +1,4 @@
 import React, { createContext, useState, useEffect } from 'react';
-import { useLocation } from 'react-router-dom'
 import axios from 'axios';
 
 export const QuotesContext = createContext();
@@ -48,8 +47,6 @@ const QuotesProvider = (props) => {
     const [ quotes, setQuotes ] = useState([]);
     const [ location, setLocation ] = useState([]);
 
-    
-    console.log(location);
 
     useEffect(() => {
         // Only call if pathname equal to '/'

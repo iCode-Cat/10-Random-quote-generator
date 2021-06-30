@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { QuotesContext } from '../context/QuotesProvider';
-import { useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router';
 
 const Button = () => {
 
